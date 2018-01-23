@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check strategy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+<form class="form-horizontal" action="/check_strategy_result/" method="post">
+
+        {% csrf_token %}
+
+<fieldset>
+
+<!-- Form Name -->
+<legend>Проверка стратегий входа</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rating_growth">Рост рейтинга (позиций)</label>
+  <div class="col-md-4">
+  <input id="rating_growth" name="rating_growth" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rating_period">Рост рейтинга (дни)</label>
+  <div class="col-md-4">
+  <input id="rating_period" name="rating_period" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="market_cap_growth">Рост MC (разы)</label>
+  <div class="col-md-4">
+  <input id="market_cap_growth" name="market_cap_growth" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="market_cap_period">Рост MC (дни)</label>
+  <div class="col-md-4">
+  <input id="market_cap_period" name="market_cap_period" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="money_spent">Первоначальная инвестиция</label>
+  <div class="col-md-4">
+  <input id="money_spent" name="money_spent" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+    <input type="submit" class="btn btn-primary" value="OK">
+
+</fieldset>
+</form>
+
+
+</body>
+</html>
